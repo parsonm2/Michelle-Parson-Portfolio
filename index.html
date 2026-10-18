@@ -1,11 +1,85 @@
-<h1> "Hi, I'm Michelle Parson" </h1>
-
-<p> "Technological Antrhopologist" <p>
-  <p1> "I'm a User Experience Researcher and Designer" <p1>
-
-Project 1
-    Third Space
-Project 2
-    Mobility and Community Access Research
-Project 3
-  Fashion Forward
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The title will store the name of my website, this appears in the browser tab -->
+  <title>Michelle Parson Design</title>
+</head>
+<body>
+  <!-- My header stays the same on every page -->
+  <header>
+  
+    <a class="logo" href="#index.html"><img src="images/" alt="Logo Placeholder"></a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- everything inside of main will live on the home page -->
+<main>
+  <section>
+    <!-- hero statement -->
+    <h1>Hi, I'm Michelle Parson.</h1> 
+    </section>
+    <section aria-labelledby="about">
+    <h2 id="about">About</h2>
+   <p>I bridge <strong>communication sciences, philosophy, and digital anthropology</strong> to research multifaceted problems and design digital solutions.</p>
+  </section>
+   <!-- Here I will contain all of my case studies and projects I want to show off -->
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+        <!-- Project 1 info here -->
+    <article>
+      <h3 id="ux-research-portfolio-heading">UX Research Portfolio</h3>
+      <p>A curated collection of UX research and design case studies — methods, findings, and design outcomes across projects.</p>
+      <!-- I will include a link to the individual project's page-->
+      <p><a href="">Click here to learn more!</a></p>
+    </article>
+        <!-- Project 2 info here -->
+    <article>
+      <h3 id="thirdspace-heading">ThirdSpace: MSU 2026 Designathon Award Winner, Best Prototype</h3>
+      <p>Inspired by my prior communication research, I wanted to address the issue of lacking access to community in environments that limit mobility. This UI prototypes a public service that connects people with similar interests based on proximity, enabling natural friendships to develop through shared location-based experiences.</p>
+        <!-- I will include a link to the individual project's page-->
+   <p><a href="">Click here to learn more!</a></p>
+    </article>
+    <!-- Project 3 info here -->
+    <article>
+      <h3 id="physical-mobility-heading">Physical Mobility and Access to Community Storytelling Networks</h3>
+      <p>Examining how mobility infrastructure shapes civic engagement by introducing physical mobility as a structural condition within Communication Infrastructure Theory. How might the way you get to work, school, the library or grocery store enable and/or limit opportunities for social interaction within your community?</p>
+    </article>
+        <!-- Project 4 info here -->
+    <article>
+      <h3 id="best-dressed-heading">Best Dressed</h3>
+      <p>A create-your-own-adventure dress-up game demonstrating logic tree structures in Python. Players style an outfit, choose their hair, shoes and accessories for a randomly assigned theme (wedding, night out, or picnic) and receive an ending based on their score.</p>
+        <!-- I will include a link to the individual project's page-->
+   <p><a href="">Click here to learn more!</a></p>
+    </article>
+  </section>
+  <!-- My contact info goes below -->
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <div>
+    <h3>Get in touch with me!</h3>
+    <form name="Contact Form" action="/send">
+      <label for="email">Please provide your email address</label>
+      <input type="email" id="email" name="email" />
+      <button type="submit">Contact Me</button>
+    </form>
+    </div>
+    <address>
+      <p>parsonm2@msu.edu</p>
+    </address>
+    <address>
+      <p><a href="https://www.linkedin.com/in/michelleparson">Connect with me on LinkedIn!</a></p>
+    </address>
+  </section>
+ </main>
+ <footer>
+  <p>Copyright &copy; 2026 Michelle Parson</p>
+ </footer>
+</body>
+</html>
