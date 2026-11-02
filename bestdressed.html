@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- I will use a link rel to reference my css style sheet below -->
+        <link rel="stylesheet" href="style.css">
+    <title>Best Dressed</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="#index.html"><img src="mplogo__1_-removebg-preview.png" alt="Logo Placeholder"></a>
+        
+        <nav id="menu" class="wayfinder" 
+    aria-label="Primary">
+
+    <!-- my navigation bar goes below -->
+
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+        <section id="best-dressed-overview">
+            <h1 id="best-dressed-heading">Best Dressed</h1>
+            <p>A create-your-own-adventure dress-up game demonstrating logic tree structures in Python. Players style an outfit, choose their hair, shoes and accessories for a randomly assigned theme (wedding, night out, or picnic) and receive an ending based on their score.</p>
+        </section>
+        <section id="bestdressed-context">
+            <h2 id="purpose-heading">Purpose & Context</h2>
+            <p>Built for a Programming class to demonstrate understanding of logic tree structures in Python. The project translates a branching decision system, where each sequential choice narrows the path and accumulates a score, into a playful, visual experience using Pygame. Designing the scoring logic required thinking carefully about user decision flows, a skill directly transferable to UX work.</p>
+            <h2 id="logic-heading">Logic Tree Structure</h2>
+            <p>The game's core is a branching logic tree. Each player choice (gender, skin tone, hair, outfit, shoes, accessories) is a node with weighted outcomes. Choices are evaluated against the randomly assigned theme (wedding, night out, picnic) and a score is accumulated. The full logic tree diagram and a zoomed detail of one branch are shown below.</p>
+            <h2 id="how-it-works-heading">How It Works</h2>
+            <p>Players begin at a start screen with background music. After clicking Play, they choose a skin tone and confirm. A random theme is assigned. The player makes four sequential selections,  hair, shoes, outfit, and accessories, each confirmed with a checkmark. Each choice carries a point value relative to how well it matches the assigned theme. A short intermission screen appears before the final outcome is revealed.
+            <h2>Game Assests and Design Process</h2>
+                <p>The dressing room background, outfit selection UI, and ending scenes were key design artifacts. Below are process images showing the outfit selection stage, and the positive and negative ending scenes for the wedding theme with background illustrations created by Michelle Parson and Michelle Ren to communicate outcome tone without relying on text alone.</p>
+            </section>
+        <section id="bestdressed-images">
+            <h3>View Project Media</h3>
+<!-- Project demo vid lives here -->
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/z_OO4eCFkTU?si=AmHrgtubFHrEXvlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- This is where I will put my image -->
+<a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_1.png" alt="Title screen — the start screen players see on launch, with Play, Help, and Quit options."></a>
+
+ <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_2.png" alt="Character customization — players choose a skin tone before their theme is revealed."></a>
+
+ <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="FFlogictree.png" alt="Full logic tree structure showing all branching paths across themes, choices, and weighted outcomes."></a>
+
+ <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="FFlogictreemini.png" alt="Detail view of a single branch — zoomed in to show the written decision nodes and outcome weights."></a>
+
+ <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_4.png" alt="Dressing room with character centered — players see their avatar while selecting outfit options."></a>
+
+ <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_5.png" alt="Dressing room (alternate view) — outfit selection UI with character in center frame."></a>
+
+ <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_3.png" alt="Chat bubble prototype — UI concept for displaying game outcome messages to the player."></a>
+
+ <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_6.png" alt="Wedding theme — positive ending scene: 'You showed up to the wedding and everyone couldn't stop complimenting you.'"></a> 
+
+  <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_7.png" alt="Wedding theme — neutral ending scene: a middle-ground outcome for a balanced score."></a> 
+
+  <!-- This is where I will put my image -->
+ <a class="bestdressed_pic" href="#bestdressed.html"><img src="bestdressed_8.png" alt="Wedding theme — negative ending scene: 'You showed up to the wedding, but your outfit felt completely off.'"></a> 
+        </section>
+        <section id="ending-credits">
+            <h2 id="ending-heading">Endings & Scoring</h2>
+            <p>The cumulative score across all four choices determines which of three endings the player receives: Good, Neutral, or Bad. Each ending has a themed screen with corresponding music, creating a complete narrative loop. Players can click Play Again to restart with a new random theme.</p>
+            <h2 id="credits-heading">Credits</h2>
+            <p>UI elements and dressing room/intermission backgrounds were generated using DALL-E. Character designs, outfits, and ending scene illustrations were created by Michelle Parson and refined by Michelle Ren. Permission was obtained from Juiice on Tumblr for use of character designs. Audio files sourced from open-use libraries; in-game background music produced by Kristian Davis.</p>
+        </section>
+        <section id="view-source-code">
+            <h3 id="view-code-heading">View Source Code </h3>
+             <p id="view-code-text"><a href="https://github.com/parsonm2/Best-Dressed">Download code →</a></p>
+             <p>Requires Python 3 + pip install pygame-ce</p>
+        </section>
+        <section id="methods-outcomes">
+            <h3 id="methods-tools-heading">Methods & Tools</h3>
+            <ul>
+                <li>Python</li>
+                <li>Pygame-CE</li>
+                <li>Logic Tree Structures</li>
+                <li>Adobe Illustrator</li>
+                <li>DALLE-E (asset generation)</li>
+                <li>Canva Pro</li>
+                <li>UX Design</li>
+            </ul>
+               <h3 id="outcomes-heading">Outcomes</h3>
+               <ul>
+                <li>Playable desktop game</li>
+                <li>Branching score system</li>
+                <li>Original charachter illustrations</li>
+                <li>Themed audio experience</li>
+                <li>Project Management Plan</li>
+                </ul>
+        </section>
+        <section id="program-objectives">
+            <h2 id="program-objectives-heading">Program Objectives</h2>
+            <ol>
+                <li>Use turtle to display an introduction/background of the game for the user.</li>
+                <li>Display a character, have the user choose the gender, skin color, and hair.</li>
+                <li>Display randomized theme; display customized character in fashion looks; give user a fashion choice.</li>
+                <li>Match the fashion choice to a success outcome which gives a win/lose outcome based on the theme.</li>
+            </ol>
+        </section>
+        <section id="dependency-flow">
+            <h3 id="dependency-flow-heading">Dependency Flow</h3>
+            <ul>
+                <li>Setup</li>
+                <li>↓</li>
+                <li>Plan Game Structure</li>
+                <li>↓</li>
+                <li>Create Assets</li>
+                <li>↓</li>
+                <li>Turtle Screen Setup</li>
+                <li>↓</li>
+                <li>Clickable Option System</li>
+                <li>↓</li>
+                <li>Display Option Buttons</li>
+                <li>↓</li>
+                <li>Category Flow</li>
+                <li>↓</li>
+                <li>Scoring Systems</li>
+                <li>↓</li>
+                <li>Ending Logic</li>
+                <li>↓</li>
+                <li>Ending Screen</li>
+                <li>↓</li>
+                <li>Reset / Play Again</li>
+                <li>↓</li>
+                <li>Testing & Debugging</li>
+                <li>↓</li>
+                <li>Final Revisions</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; Michelle Parson 2026</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,301 @@
+:root {
+    --primary-bg: #f4f1bb;
+    --primary-text: #444;
+    --standard-gap: 40px;
+    --page-margin: 6rem;
+    --secondary: #bcd979
+
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    border-top: 20px solid var(--secondary);
+    margin: 0;
+}
+
+#projects article {
+    margin: var(--standard-gap);
+}
+
+
+/*the id selector is the most specific selector being used here so blue will apply */
+
+#menu {
+    background:#bcd979;
+    border-radius: 30px;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: o;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #01184e;
+    text-decoration: none;
+    font-size: 1.8 em;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: color-mix(in oklab, var(--secondary), black 10%);
+}
+#hero {
+    font-family: press-start-2p;
+}
+
+#hero-header {
+    color:#5eb1bf;
+}
+
+#hero h1{
+    font-size: 4em;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+#hero-statement {
+    font-family:sans-serif;
+}
+
+#hero-statement {
+    color: var(--primary-text);
+}
+
+h2 {
+    color:#5eb1bf;
+}
+
+h3 {
+    color:#01184e;
+}
+
+#skills-section {
+    background:#8aceff;
+    border: 1px solid #bcd979;
+    border-top-style: dotted;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#skills-section h2 {
+    color:#01184e;
+    font-family: sans-serif;
+}
+
+#skills-section li {
+    color:#01184e;
+}
+
+#tools-section {
+    background:#8aceff;
+    border: 1px solid #bcd979;
+    border-top-style: dotted;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#tools-section h2 {
+    color:#01184e;
+    font-family: sans-serif
+}
+
+#process-section {
+    background:#bcd979;
+}
+
+#process-section {
+    text-align: center;
+}
+
+#process-section h4{
+    color:#1f6ac2;
+    font-family: sans-serif;
+}
+
+#context-heading {
+    color:#5eb1bf;
+}
+
+#contact-section {
+    background:#8aceff;
+    text-align: center;
+}
+
+#contact-section h2 {
+    color:#1f6ac2
+}
+
+/* Adding green backgrounds around my articles in the project section on the homepage index.html */
+
+
+#projects article {
+    background:#bcd979;
+    margin: 40px;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.4;
+    color:#01184e;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 var(page-margin);
+}
+
+#methods-research-section h3 {
+    color:#5eb1bf;
+}
+
+#methods-research-section li {
+    color:#01184e;
+}
+
+#contextual-image-heading {
+    color:#5eb1bf;
+}
+
+p {
+    color:#01184e;
+}
+
+li {
+    color:#01184e;
+}
+h3 {
+    color:#5eb1bf;
+}
+
+#logo img{
+    width: 100px;
+}
+
+#logo img:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.tree_image img {
+    width: 500px;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Gives the container height (e.g., full screen) */
+}
+
+
+main {
+    margin: 0 var(--page-margin);
+}
+
+#image img {
+    width: 300px;
+}
+
+.research_pic img{
+    width: 500px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+
+.bestdressed_pic img{
+    width: 500px;
+}
+#projects img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150 px;
+}
+
+.thirdspace_image img {
+    width: 300px;
+}
+
+.thirdspace_wbimage img {
+    width: 400px;
+}
+
+#projects img hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.teamimage img {
+    width: 500px;
+}
+
+#hero img {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h3 {
+    color:#01184e
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo img: hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(3,minmax(100px, auto));
+        gap: 1em;
+}
+    #projects h2 {
+        grid-column: span 3 / span 3;
+}
+
+@media (min-width: 1000px) {
+    #projects {
+        grid-template-columns: repeat(3, 1fr);
+}
+    #projects h2 {
+        grid-column: span 3 / span 3;
+    }
+}
+
+#projects article h3 {
+    font-size: 2em;
+}
+
+
+
