@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- I will use a link rel to reference my css style sheet below -->
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" scr="darkmode.js" defer></script>
   <!-- The title will store the name of my website, this appears in the browser tab -->
   <title>Michelle Parson Design</title>
+
+  
+  <script scr="https://unpkg.com/scrollreveal"></script>
+  <script scr="utilities.js"></script>
+
 </head>
-<body>
+<body class="">
   <!-- My header stays the same on every page -->
   <header>
-        <a class="logo" href="#index.html"><img src="mplogo__1_-removebg-preview.png" alt="Logo Placeholder"></a>
-        
+  
+        <a class="logo" href="index.html"><img src="mplogo__1_-removebg-preview.png" alt="Logo Placeholder"></a>
+
         <nav id="menu" class="wayfinder" 
     aria-label="Primary">
 
@@ -20,14 +27,22 @@
 
 
       <ul>
-        <li><a href="#about">About</a></li>
+ 
         <li><a href="#projects">Projects</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+  <button id="theme-switch">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#E8EAED"><path d="M12,21q-3.75,0-6.38-2.63T3,12T5.63,5.63T12,3q0.35,0 0.69,0.02q0.34,0.02 0.66,0.07q-1.03,0.73-1.64,1.89T11.1,7.5q0,2.25 1.57,3.82T16.5,12.9q1.38,0 2.53-0.61t1.88-1.64q0.05,0.33 0.07,0.66T21,12q0,3.75-2.63,6.38T12,21Z"/></svg>
+   <!--dark mode above, light mode below-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#E8EAED"><path d="M8.46,15.54Q7,14.08 7,12Q7,9.92 8.46,8.46T12,7t3.54,1.46T17,12t-1.46,3.54T12,17q-2.07,0-3.54-1.46ZM5,13H1V11H5v2Zm18,0H19V11h4v2ZM11,5V1h2V5H11Zm0,18V19h2v4H11ZM6.4,7.75L3.88,5.32L5.3,3.85l2.4,2.5L6.4,7.75Zm12.3,12.4l-2.42-2.52l1.32-1.38l2.52,2.43L18.7,20.15ZM16.25,6.4l2.43-2.52L20.15,5.3l-2.5,2.4l-1.4-1.3ZM3.85,18.7l2.53-2.43L7.75,17.6L5.33,20.13L3.85,18.7Z"/></svg>
+    </button>
   </header>
   <!-- everything inside of main will live on the home page -->
-<main>
+<main class="site">
+
   <section id="hero">
     <!-- hero statement -->
      <h1 id="hero-header">Hi, I'm Michelle Parson</h1>
@@ -50,7 +65,7 @@
          <a class="image" href="#index.html"><img src="portfolio-picture.jpg" alt="Michelle Parson's UX Research Portfolio presentation title screen"></a>
       <p>A curated collection of UX research and design case studies — methods, findings, and design outcomes across projects.</p>
       <!-- I will include a link to the individual project's page-->
-      <p><a href="">View my Portfolio</a></p>
+      <p><a href="Michelle_Parson_Portfolio_.pdf">Download my Portfolio</a></p>
     </article>
         <!-- Project 2 info here -->
     <article id="thirdspace-article">
@@ -58,14 +73,16 @@
        <a class="image" href="#index.html"><img src="third-space.jpg" alt="ThirdSpace logo screen"></a>
       <p>Inspired by my prior communication research, I wanted to address the issue of lacking access to community in environments that limit mobility. This UI prototypes a public service that connects people with similar interests based on proximity, enabling natural friendships to develop through shared location-based experiences.</p>
         <!-- I will include a link to the individual project's page-->
-   <p><a href="">Learn more about ThirdSpace</a></p>
+   <p><a href="thirdspace.html">Learn more about ThirdSpace</a></p>
+   
+  
     </article>
     <!-- Project 3 info here -->
     <article id="research-article">
       <h3 id="physical-mobility-heading">Physical Mobility and Access to Community Storytelling Networks</h3>
          <a class="image" href="#index.html"><img src="car-dependency.png" alt="Car-dependent infrastructure isolates community"></a>
       <p>Examining how mobility infrastructure shapes civic engagement by introducing physical mobility as a structural condition within Communication Infrastructure Theory. How might the way you get to work, school, the library or grocery store enable and/or limit opportunities for social interaction within your community?</p>
-         <p><a href="">Learn more about my research</a></p>
+         <p><a href="research.html">Learn more about my research</a></p>
     </article>
         <!-- Project 4 info here -->
     <article id="bestdressed-article">
@@ -73,10 +90,11 @@
          <a class="image" href="#index.html"><img src="didyounailthelook.png" alt="Best Dressed loading screen: Did you nail the look?"></a>
       <p>A create-your-own-adventure dress-up game demonstrating logic tree structures in Python. Players style an outfit, choose their hair, shoes and accessories for a randomly assigned theme (wedding, night out, or picnic) and receive an ending based on their score.</p>
         <!-- I will include a link to the individual project's page-->
-   <p><a href="">Learn more about Best Dressed</a></p>
+   <p><a href="bestdressed.html">Learn more about Best Dressed</a></p>
     </article>
     
   </section>
+
   <!-- My contact info goes below -->
   <section id="contact">
     <h2 id="contact-heading">Contact</h2>
@@ -85,7 +103,7 @@
     <form name="Contact Form" action="/send">
       <label for="email">Please provide your email address</label>
       <input type="email" id="email" name="email" />
-      <button type="submit">Contact Me</button>
+      <button id="Contact_button" type="submit">Contact Me</button>
     </form>
     </div>
     <address>
@@ -97,7 +115,7 @@
   </section>
  </main>
  <footer>
-  <p>Copyright &copy; 2026 Michelle Parson</p>
+  <p>All contents of this site, unless otherwise noted, are <strong>&copy; 2026 Michelle Parson,</strong> All Rights Reserved. </p>
  </footer>
 </body>
 </html>
