@@ -6,17 +6,22 @@
     --page-margin: 6rem;
     --secondary: #bcd979;
     --h3text: #01184e;
-
+    --paragraphtext: #01184e;
+    --textongreen: #01184e;
+    --headertext:#355d69;
 }
 
 .darkmode{
-    --primary-bg: #070b1d;
+    --primary-bg: #3e424b;
     --primary-text: #fff;
     --secondary-bg: #bcd979;
     --standard-gap: 40px;
     --page-margin: 6rem;
     --secondary: #bcd979;
     --h3text: #fff;
+    --paragraphtext: #eeee;
+    --textongreen: #01184e;
+    --headertext:#8aceff;
 }
 
 body {
@@ -29,6 +34,10 @@ body {
 
 #projects article {
     margin: var(--standard-gap);
+}
+
+#projects p {
+    color: var(--textongreen);
 }
 
 
@@ -51,7 +60,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #01184e;
+    color: var(--textongreen);
     text-decoration: none;
     font-size: 1.8 em;
     padding: 1rem 2rem;
@@ -66,7 +75,7 @@ nav ul li a:hover {
 }
 
 #hero-header {
-    color: #355d69;
+    color: var(--headertext);
     /*color:#5eb1bf;*/
 }
 
@@ -85,7 +94,7 @@ nav ul li a:hover {
 }
 
 h2 {
-    color:#355d69;
+    color: var(--headertext);
 }
 
 h3 {
@@ -106,12 +115,12 @@ h3 {
 }
 
 #skills-section h2 {
-    color:#01184e;
+    color: var(--paragraphtext);
     font-family: sans-serif;
 }
 
 #skills-section li {
-    color:#01184e;
+    color: var(--paragraphtext);
 }
 
 #tools-section {
@@ -123,7 +132,7 @@ h3 {
 }
 
 #tools-section h2 {
-    color:#01184e;
+    color: var(--paragraphtext);
     font-family: sans-serif
 }
 
@@ -165,7 +174,7 @@ h3 {
 p {
     font-size: 1.4em;
     line-height: 1.4;
-    color:#01184e;
+    color: var(--paragraphtext);
 }
 
 header {
@@ -187,11 +196,11 @@ header {
 }
 
 p {
-    color:#01184e;
+    color: var(--paragraphtext);
 }
 
 li {
-    color:#01184e;
+    color: var(--textongreen);
 }
 h3 {
     color: #355d69;
@@ -213,7 +222,7 @@ footer {
 }
 
 .tree_image img {
-    width: 400px;
+    width: 500px;
 }
 
 .container {
@@ -275,9 +284,12 @@ h3 {
     */
 
 #projects img {
-    width:100%;
-    height: auto; 
+    justify-content: center;
+    width: 100%;
+    height: auto;
     object-fit: scale-down;
+    align-items: center;
+
 }
 
 .teamimage img {
@@ -437,14 +449,26 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 #theme-switch svg{
     fill:var(--primary-text);
 }
 
+#theme-switch svg:last-child{
+    display: none;
+}
+
+
 .darkmode #theme-switch svg:first-child{
-    display: block;
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block; 
 }
 
 .card {
