@@ -6,11 +6,22 @@
          <!-- I will use a link rel to reference my css style sheet below -->
     <link rel="stylesheet" href="style.css">
     <title>ThirdSpace | MP Design</title>
+
+
+    <script src="utilities.js" defer></script>
+
+
 </head>
+
+
 <body>
     <header>
-        <a class="logo" href="#index.html"><img src="mplogo__1_-removebg-preview.png" alt="Logo Placeholder"></a>
+      <!--  <a class="logo" href="#index.html"><img src="mplogo__1_-removebg-preview.png" alt="Logo Placeholder"></a> -->
         
+
+             <a class="logo" href="index.html"><img src="mplogo__1_-removebg-preview.png" alt="Logo Placeholder"></a>
+
+
         <nav id="menu" class="wayfinder" 
     aria-label="Primary">
 
@@ -51,20 +62,80 @@
     <!-- Here is where I will add my images and the captions to my images -->
 
     <!-- Here is the video for the prototype walkthrough -->
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/Pux0wmPVXOE?si=znhkoEhRSPqE3lyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
 
-     <!-- Here is the video for the presentation -->
+<div class="carousel" aria-label="Photo Gallery">
+  <div class="carousel-track">
+    <div class="carousel-slide">
+      <iframe src="https://www.youtube.com/embed/Pux0wmPVXOE?si=znhkoEhRSPqE3lyO" title="Prototype walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-slide">
+      <iframe src="https://www.youtube.com/embed/Ats3sHTb8MQ?si=khSSy4qixTA30dEO" title="Designathon presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-slide"><img src="thirdspace_1.png" alt="Groups"></div>
+    <div class="carousel-slide"><img src="thirdspace_2.png" alt="People"></div>
+    <div class="carousel-slide"><img src="thirdspace_3.jpg" alt="User Profile"></div>
+    <div class="carousel-slide"><img src="thirdspace_4.jpg" alt="Chat1"></div>
+    <div class="carousel-slide"><img src="thirdspace_5.jpg" alt="Chat2"></div>
+    <div class="carousel-slide"><img src="thirdspace_6.jpg" alt="Discover"></div>
+    <div class="carousel-slide"><img src="thirdspace_7.jpg" alt="Spaces"></div>
+  </div>
+
+  <button class="carousel-btn prev" aria-label="Previous Photo">&#10094;</button>
+  <button class="carousel-btn next" aria-label="Next Photo">&#10095;</button>
+</div>
+
+
+
+
+<!-- <div class="carousel" aria-label="Photo Gallery">
+  <div class="carousel-track">
+    <div class="carousel-slide">
+      <iframe src="https://www.youtube.com/embed/Pux0wmPVXOE?si=znhkoEhRSPqE3lyO" title="Prototype walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-slide">
+      <iframe src="https://www.youtube.com/embed/Ats3sHTb8MQ?si=khSSy4qixTA30dEO" title="Designathon presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-slide"><img src="thirdspace_1.png" alt="Groups"></div>
+    <div class="carousel-slide"><img src="thirdspace_2.png" alt="People"></div>
+    <div class="carousel-slide"><img src="thirdspace_3.jpg" alt="User Profile"></div>
+    <div class="carousel-slide"><img src="thirdspace_4.jpg" alt="Chat1"></div>
+    <div class="carousel-slide"><img src="thirdspace_5.jpg" alt="Chat2"></div>
+    <div class="carousel-slide"><img src="thirdspace_6.jpg" alt="Discover"></div>
+    <div class="carousel-slide"><img src="thirdspace_7.jpg" alt="Spaces"></div>
+  </div>
+
+  <button class="carousel-btn prev" aria-label="Previous Photo">&#10094;</button>
+  <button class="carousel-btn next" aria-label="Next Photo">&#10095;</button>
+</div>
+
+-->
+
+
+    <!--
+    <div class="carousel" aria-label="Photo Gallery">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pux0wmPVXOE?si=znhkoEhRSPqE3lyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Ats3sHTb8MQ?si=khSSy4qixTA30dEO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       <!-- This is where I will put my image -->
+    
  <a class="thirdspace_image" href="#index.html"><img src="thirdspace_1.png" alt="Groups"></a>
-  <!-- This is where I will put my image -->
+
  <a class="thirdspace_image" href="#index.html"><img src="thirdspace_2.png" alt="People"></a>
-  <!-- This is where I will put my image -->
+
  <a class="thirdspace_image" href="#index.html"><img src="thirdspace_3.jpg" alt="User Profile"></a>
   <a class="thirdspace_image" href="#index.html"><img src="thirdspace_4.jpg" alt="Chat1"></a>
    <a class="thirdspace_image" href="#index.html"><img src="thirdspace_5.jpg" alt="Chat2"></a>
     <a class="thirdspace_image" href="#index.html"><img src="thirdspace_6.jpg" alt="Discover"></a>
      <a class="thirdspace_image" href="#index.html"><img src="thirdspace_7.jpg" alt="Spaces"></a>
+     </div>
+
+    
+
+     <button class="carousel-btn- prev" aria-label="Previous Photo">&#10094;</button>
+     <button class="carousel-btn next" aria-label="Next Photo">&#10095;</button>
+
+    -->
 </section>
 <section>
 <h3>Challenges</h3>
